@@ -4,6 +4,7 @@ import SectionTitle from "../components/common/SectionTitle";
 import InfoCard from "../components/common/InfoCard";
 import "./InterfazPrincipal.css";
 import Contacto from "./Contacto";
+import Galeria from "./Galeria"; // 1. Agregado: Importación de la Galería
 
 function InterfazPrincipal() {
     const [seccionActiva, setSeccionActiva] = useState("noticias");
@@ -17,7 +18,6 @@ function InterfazPrincipal() {
 
     const renderContenido = () => {
         switch (seccionActiva) {
-
 
             case "contacto":
                 return <Contacto />;
@@ -47,38 +47,9 @@ function InterfazPrincipal() {
                     </div>
                 );
 
+            // 2. Modificado: Reemplazo del contenido temporal por el componente
             case "galeria":
-                return (
-                    <div className="contenido-seccion">
-                        <SectionTitle
-                            title="Galería"
-                            subtitle="Aquí se mostrarán imágenes de actividades, promociones, deportes, fraternidad Suris y banda de ex alumnos."
-                        />
-
-                        <div className="contenido-grid">
-                            <InfoCard
-                                title="Banda Ex Alumnos"
-                                description="Espacio para fotografías de la banda de ex alumnos."
-                            />
-                            <InfoCard
-                                title="Fraternidad Suris"
-                                description="Espacio para fotografías de la fraternidad Suris."
-                            />
-                            <InfoCard
-                                title="Promociones"
-                                description="Espacio para fotografías de promociones del colegio."
-                            />
-                            <InfoCard
-                                title="Deportes"
-                                description="Espacio para fotografías de actividades deportivas."
-                            />
-                        </div>
-
-                        <div className="contenido-aviso">
-                            Futuro endpoint: <strong>/api/galeria</strong>
-                        </div>
-                    </div>
-                );
+                return <Galeria />;
 
             case "noticias":
             default:
