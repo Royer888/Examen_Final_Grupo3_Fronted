@@ -1,3 +1,4 @@
+import SnowEffect from "./SnowEffect";
 import PortalBanner from "./PortalBanner";
 import SideMenu from "./SideMenu";
 import ContentPanel from "./ContentPanel";
@@ -6,7 +7,9 @@ import "./PortalLayout.css";
 
 function PortalLayout({ activeSection, onChangeSection, title, children }) {
   return (
-    <main className="portal-layout" id="portal">
+    <main className="portal-layout">
+      <SnowEffect />
+
       <section className="portal-layout-container">
         <PortalBanner />
 
