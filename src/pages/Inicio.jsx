@@ -8,7 +8,7 @@ function Inicio({ onEntrar }) {
 
       <section className="inicio-content">
         <div className="inicio-logo">
-          <img src="/logo-colegio.png" alt="Logo Colegio Carlos Medinaceli" />
+          <img src="/Logo.jpeg" alt="Logo Colegio Carlos Medinaceli" />
         </div>
 
         <p className="inicio-subtitle">
@@ -26,7 +26,7 @@ function Inicio({ onEntrar }) {
         </button>
 
         <p className="inicio-credit">
-          Realizado por Roger Flores
+          Roger Flores --- Aide Coro Mendo --- Jorge Roman Ochoa Saldaña
         </p>
       </section>
     </main>
