@@ -1,0 +1,12 @@
+.side-menu {
+  background: #f4f4f4;
+  border: 1px solid #c8c8c8;
+}
+
+.side-menu-title {
+  background: #0d4259;
+  color: #ffffff;
+  padding: 9px 12px;
+  font-size: clamp(15px, 1.7vw, 18px);
+  font-weight: 700;
+}

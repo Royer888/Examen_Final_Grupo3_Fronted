@@ -39,7 +39,7 @@
 .inicio-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .inicio-subtitle {
@@ -78,55 +78,4 @@
   margin: 0;
   color: #dcdcdc;
   font-size: clamp(13px, 1.8vw, 18px);
-}
-
-/* NIEVE */
-.nieve {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.nieve span {
-  position: absolute;
-  top: -40px;
-  color: #ffffff;
-  font-size: clamp(18px, 2vw, 32px);
-  text-shadow: 0 0 8px #9ecbff;
-  animation-name: caer-nieve;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.nieve-1 { left: 4%; animation-duration: 7s; animation-delay: 0s; }
-.nieve-2 { left: 10%; animation-duration: 9s; animation-delay: 1s; }
-.nieve-3 { left: 16%; animation-duration: 8s; animation-delay: 2s; }
-.nieve-4 { left: 22%; animation-duration: 10s; animation-delay: 0s; }
-.nieve-5 { left: 28%; animation-duration: 7s; animation-delay: 3s; }
-.nieve-6 { left: 34%; animation-duration: 11s; animation-delay: 1s; }
-.nieve-7 { left: 40%; animation-duration: 8s; animation-delay: 4s; }
-.nieve-8 { left: 46%; animation-duration: 9s; animation-delay: 2s; }
-.nieve-9 { left: 52%; animation-duration: 10s; animation-delay: 0s; }
-.nieve-10 { left: 58%; animation-duration: 7s; animation-delay: 3s; }
-.nieve-11 { left: 64%; animation-duration: 11s; animation-delay: 1s; }
-.nieve-12 { left: 70%; animation-duration: 8s; animation-delay: 4s; }
-.nieve-13 { left: 76%; animation-duration: 9s; animation-delay: 2s; }
-.nieve-14 { left: 82%; animation-duration: 10s; animation-delay: 0s; }
-.nieve-15 { left: 88%; animation-duration: 7s; animation-delay: 3s; }
-.nieve-16 { left: 94%; animation-duration: 11s; animation-delay: 1s; }
-.nieve-17 { left: 14%; animation-duration: 12s; animation-delay: 5s; }
-.nieve-18 { left: 38%; animation-duration: 9s; animation-delay: 6s; }
-.nieve-19 { left: 62%; animation-duration: 13s; animation-delay: 4s; }
-.nieve-20 { left: 86%; animation-duration: 8s; animation-delay: 5s; }
-
-@keyframes caer-nieve {
-  from {
-    transform: translateY(-40px);
-  }
-
-  to {
-    transform: translateY(110vh);
-  }
 }

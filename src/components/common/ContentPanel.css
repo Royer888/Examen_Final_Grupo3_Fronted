@@ -1,0 +1,17 @@
+.content-panel {
+  background: #ffffff;
+  border: 6px solid rgba(13, 66, 89, 0.55);
+  min-height: clamp(420px, 60vh, 620px);
+}
+
+.content-panel-header {
+  background: #0d4259;
+  color: #f5c542;
+  padding: 10px 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content-panel-body {
+  padding: clamp(24px, 4vw, 42px);
+}
