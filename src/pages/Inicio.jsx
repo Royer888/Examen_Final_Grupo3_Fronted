@@ -8,7 +8,10 @@ function Inicio({ onEntrar }) {
 
       <section className="inicio-content">
         <div className="inicio-logo">
-          <img src="/Logo.jpeg" alt="Logo Colegio Carlos Medinaceli" />
+          <img
+          src={`${import.meta.env.BASE_URL}Logo.jpg`}
+          alt="Logo Colegio Carlos Medinaceli"
+          />
         </div>
 
         <p className="inicio-subtitle">
