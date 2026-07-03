@@ -1,0 +1,30 @@
+.right-panel {
+  background: #f4f4f4;
+  border: 1px solid #c8c8c8;
+  align-self: start;
+}
+
+.right-panel-title {
+  background: #0d4259;
+  color: #ffffff;
+  padding: 9px 12px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.right-panel-card {
+  padding: 18px;
+  background: #ffffff;
+  color: #333333;
+  min-height: 180px;
+}
+
+.right-panel-card h3 {
+  margin: 0 0 12px;
+  color: #0d4259;
+}
+
+.right-panel-card p {
+  margin: 0;
+  line-height: 1.6;
+}

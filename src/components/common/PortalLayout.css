@@ -1,0 +1,38 @@
+.portal-layout {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at center, rgba(255, 140, 0, 0.35), transparent 40%),
+    linear-gradient(135deg, #120500, #000000 45%, #1b0800);
+  padding: clamp(0px, 2vw, 18px);
+}
+
+.portal-layout-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  border: 2px solid #f5a623;
+  background: rgba(0, 0, 0, 0.68);
+  box-shadow: 0 0 30px rgba(255, 132, 0, 0.35);
+}
+
+.portal-layout-body {
+  display: grid;
+  grid-template-columns: minmax(180px, 230px) 1fr minmax(170px, 210px);
+  gap: 12px;
+  padding: 12px;
+}
+
+@media (max-width: 980px) {
+  .portal-layout-body {
+    grid-template-columns: minmax(170px, 220px) 1fr;
+  }
+
+  .right-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .portal-layout-body {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,30 +1,10 @@
+import SnowEffect from "../components/common/SnowEffect";
 import "./Inicio.css";
 
 function Inicio() {
   return (
     <main className="inicio-page">
-      <div className="nieve">
-        <span className="nieve-1">*</span>
-        <span className="nieve-2">*</span>
-        <span className="nieve-3">*</span>
-        <span className="nieve-4">*</span>
-        <span className="nieve-5">*</span>
-        <span className="nieve-6">*</span>
-        <span className="nieve-7">*</span>
-        <span className="nieve-8">*</span>
-        <span className="nieve-9">*</span>
-        <span className="nieve-10">*</span>
-        <span className="nieve-11">*</span>
-        <span className="nieve-12">*</span>
-        <span className="nieve-13">*</span>
-        <span className="nieve-14">*</span>
-        <span className="nieve-15">*</span>
-        <span className="nieve-16">*</span>
-        <span className="nieve-17">*</span>
-        <span className="nieve-18">*</span>
-        <span className="nieve-19">*</span>
-        <span className="nieve-20">*</span>
-      </div>
+      <SnowEffect />
 
       <section className="inicio-content">
         <div className="inicio-logo">
