@@ -1,0 +1,21 @@
+.contenido-seccion {
+  text-align: center;
+}
+
+.contenido-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.contenido-aviso {
+  margin: 28px auto 0;
+  padding: 12px 16px;
+  max-width: 420px;
+  background: #f4f4f4;
+  border-left: 5px solid #0d4259;
+  color: #333333;
+  font-size: 15px;
+  text-align: left;
+}

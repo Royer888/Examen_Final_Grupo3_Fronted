@@ -1,7 +1,7 @@
 import SnowEffect from "../components/common/SnowEffect";
 import "./Inicio.css";
 
-function Inicio() {
+function Inicio({ onEntrar }) {
   return (
     <main className="inicio-page">
       <SnowEffect />
@@ -17,9 +17,13 @@ function Inicio() {
 
         <h1 className="inicio-title">BIENVENIDOS!!!</h1>
 
-        <a className="inicio-button" href="#historia">
+        <button
+          type="button"
+          className="inicio-button"
+          onClick={onEntrar}
+        >
           ENTRAR
-        </a>
+        </button>
 
         <p className="inicio-credit">
           Realizado por Roger Flores
